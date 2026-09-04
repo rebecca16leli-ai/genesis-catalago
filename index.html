@@ -170,6 +170,7 @@ td.tprice{color:var(--gold-light); font-weight:600; font-family:'Oswald',sans-se
 .pcard{
   background:var(--card); border:1px solid var(--card-border);
   display:flex; flex-direction:column; transition:border-color .2s, transform .2s;
+  min-width:0; width:100%;
 }
 .pcard:hover{border-color:var(--gold-dim); transform:translateY(-3px);}
 .pcard-img{aspect-ratio:1/1; overflow:hidden; border-bottom:1px solid var(--card-border); background:#0c0c0e;}
@@ -196,10 +197,11 @@ td.tprice{color:var(--gold-light); font-weight:600; font-family:'Oswald',sans-se
 .film-card{
   background:var(--card); border:1px solid var(--card-border);
   display:flex; flex-direction:column; transition:border-color .2s, transform .2s;
+  min-width:0; width:100%;
 }
 .film-card:hover{border-color:var(--gold-dim); transform:translateY(-3px);}
 .film-card-img{aspect-ratio:1/1; overflow:hidden; border-bottom:1px solid var(--card-border); background:#0c0c0e;}
-.film-card-img img{width:100%; height:100%; object-fit:cover;}
+.film-card-img img{width:100%; height:100%; max-width:100%; max-height:100%; object-fit:cover; display:block;}
 .film-card-body{padding:20px 22px 24px; display:flex; flex-direction:column; flex:1;}
 .film-card-body h3{font-size:16px; font-weight:600; color:var(--text); letter-spacing:.02em; margin-bottom:6px; line-height:1.25;}
 .film-desc{font-family:'Inter',sans-serif; font-size:12px; color:var(--text-muted); line-height:1.5; margin-bottom:8px;}
